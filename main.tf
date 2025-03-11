@@ -1,5 +1,5 @@
-module "ec2_instance" {
-  source = "./modules/ec2_instance"
+resource "aws_instance" "terraform_instance" {
+ #source = "./modules/ec2_instance"
   aws_region = var.aws_region
   ami_id = var.ami_id
   instance_type = var.instance_type
